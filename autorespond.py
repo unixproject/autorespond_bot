@@ -1,7 +1,8 @@
-#import tweepy
-#import random
-#import time
-import tweepy, time, sys, random
+import tweepy
+import random
+import time
+import sys
+
 
 CONSUMER_KEY = 'hlYXOClCsMQHpexVaPaXWq0zb'
 CONSUMER_SECRET = 'WZYuIfVL25lo5IySnbM8CmzYN3EeDqKWjt3QbWnLDCzlzJT1x0'
@@ -20,4 +21,4 @@ for s in search_results:
         sn = s.user.screen_name
         m = "@%s " % (sn) + str(message)
         s = api.update_status(m, s.id)
-sleep(10800)
+time.sleep(120)
