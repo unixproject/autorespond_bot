@@ -12,7 +12,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
-search_results = api.search(q="groyper", count=1)
+search_results = api.search(q="sad -filter:retweets", count=1)
  
 senteces = ['bbq', 'groyper live matters', 'we are frens', 'stay cozy fren']
 
